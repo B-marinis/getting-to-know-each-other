@@ -1,0 +1,148 @@
+me/
+  index.html
+  styles.css
+  me-800-by-800.jpg
+  me-300-by-300.jpg
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>William Marinis’s Introductions Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1>William Marinis’s Introductions Website</h1>
+
+    <p class="line">
+      Lewis Email:
+      <a href="mailto:YOUR_LEWIS_EMAIL@lewisu.edu">YOUR_LEWIS_EMAIL@lewisu.edu</a>
+    </p>
+
+    <p class="line">
+      Discord: YOUR_DISCORD_NAME
+    </p>
+  </header>
+
+  <main class="main">
+    <!-- Requirement 2: centered me-800-by-800.jpg at top -->
+    <img
+      src="me-800-by-800.jpg"
+      alt="William"
+      class="photo"
+    />
+
+    <!-- Requirement 3: Introduction -->
+    <section class="card">
+      <h2>Introduction</h2>
+      <p>
+        My name is William Marinis and I’m an Aviation Administration major at Lewis University.
+        I’m from the Chicago area and my family is a big part of my life, so I stay pretty busy balancing
+        school and everything else. I’m interested in airports and airlines and how the industry works
+        behind the scenes, not just the flying part.
+      </p>
+    </section>
+
+    <!-- Requirement 3: What I Hope to Learn (bulleted list) -->
+    <section class="card">
+      <h2>What I Hope to Learn in this Course</h2>
+      <ul>
+        <li>How to build a basic website from scratch without relying on templates</li>
+        <li>How HTML and CSS actually work together</li>
+        <li>How to use GitHub Pages correctly and keep files organized</li>
+        <li>How to debug issues faster instead of guessing</li>
+      </ul>
+    </section>
+
+    <!-- Requirement 3: Hobbies (unordered list + external link) -->
+    <section class="card">
+      <h2>My Favorite Hobby / Activity</h2>
+      <ul>
+        <li>Going to the gym and lifting</li>
+        <li>Aviation related stuff like airports, airlines, and planes</li>
+      </ul>
+
+      <p>
+        Here’s a link that describes something related to one of my interests:
+        <a href="https://www.faa.gov/" target="_blank" rel="noopener noreferrer">FAA website</a>
+      </p>
+    </section>
+
+    <!-- Requirement 3: Fun Fact (styled like the other sections) -->
+    <section class="card">
+      <h2>Fun Fact</h2>
+      <p>
+        A fun fact about me is I pay attention to airline operations stuff like schedules, costs,
+        and why certain decisions get made, even when it’s not required for class.
+      </p>
+    </section>
+
+    <!-- Requirement: unstyled Last Updated line -->
+    <p>Last Updated on 16/02/2026</p>
+  </main>
+</body>
+</html>
+/* Requirement 4: all unordered lists use square icons */
+ul {
+  list-style-type: square;
+  padding-left: 22px;
+}
+
+/* Basic styling (kept simple) */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+  margin: 0;
+  background: #f4f4f4;
+  color: #111;
+}
+
+.header {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px 14px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.header h1 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.line {
+  margin: 6px 0;
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Requirement 2: centered image at top */
+.photo {
+  display: block;
+  margin: 0 auto 18px auto;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+}
+
+/* “Card” sections so Fun Fact matches styling */
+.card {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  padding: 14px;
+  margin: 12px 0;
+}
+
+.card h2 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
